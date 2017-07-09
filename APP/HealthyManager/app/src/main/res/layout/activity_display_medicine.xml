@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/compSide"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/medicineTitleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorTheme"
+            android:text="药品信息"
+            android:textSize="36sp" />
+    </LinearLayout>
+    <!--输入框-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+    <LinearLayout
+        android:id="@+id/medicineInput"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/compSide"
+        android:layout_marginRight="@dimen/compSide"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/compHeight"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="药品名称："
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/medicineNameTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/compHeight"
+                    android:layout_weight="6"
+                    android:background="@drawable/shape"
+                    android:gravity="left"
+                    android:maxLength="16"
+                    android:maxLines="1"
+                    android:text="药品名称"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="@dimen/interval">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/compHeight"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="数量/规格："
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/medicineSpecTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/compHeight"
+                    android:layout_weight="6"
+                    android:background="@drawable/shape"
+                    android:gravity="left"
+                    android:hint="数量（规格）"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="@dimen/interval">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/compHeight"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="用量(单位)："
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/medicineDosageTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/compHeight"
+                    android:layout_weight="6"
+                    android:background="@drawable/shape"
+                    android:gravity="left"
+                    android:hint="用量（单位）"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="@dimen/interval">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/compHeight"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="频次："
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/medicineFrequencyNameTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/compHeight"
+                    android:layout_weight="6"
+                    android:background="@drawable/shape"
+                    android:gravity="left"
+                    android:hint="频次"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="@dimen/interval">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/compHeight"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="用药途径："
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/medicineWayTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/compHeight"
+                    android:layout_weight="6"
+                    android:background="@drawable/shape"
+                    android:gravity="left"
+                    android:hint="用药途径"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="@dimen/interval">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/compHeight"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="生产商："
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/medicineProducerTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/compHeight"
+                    android:layout_weight="6"
+                    android:background="@drawable/shape"
+                    android:gravity="left"
+                    android:hint="生产商"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="@dimen/interval">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/compHeight"
+                    android:layout_weight="3"
+                    android:gravity="right"
+                    android:text="备注："
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/medicineRemakeTxt"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/textAreaHeight"
+                    android:layout_weight="6"
+                    android:background="@drawable/shape"
+                    android:gravity="left"
+                    android:text="备注"
+                    android:textSize="16sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

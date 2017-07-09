@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--logo-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/searchTitleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorTheme"
+            android:textSize="36sp" />
+    </LinearLayout>
+    <!--输入框-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:id="@+id/searchInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/compSide"
+            android:layout_marginRight="@dimen/compSide"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="*网站名称："
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/searchNameEText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="6"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="@dimen/interval">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="*网址："
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/searchURLEText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="6"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:maxLength="100"
+                        android:maxLines="1"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="@dimen/interval">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="网站简介："
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/searchAbstractEText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/textAreaHeight"
+                        android:layout_weight="6"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:maxLength="100"
+                        android:maxLines="8"
+                        android:textSize="16sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!--提交-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/compSide"
+        android:layout_marginRight="@dimen/compSide"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/searchSubmitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input"
+            android:background="@drawable/shape_theme"
+            android:text="提    交"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

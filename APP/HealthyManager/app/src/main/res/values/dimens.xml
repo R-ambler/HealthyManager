@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="barHeight">60dp</dimen>   <!--标题栏高度-->
+    <dimen name="bottomHeight">60dp</dimen>   <!--标题栏高度-->
+    <dimen name="titleTextSize">20sp</dimen>   <!--标题栏字体大小-->
+
+    <dimen name="interval">8dp</dimen>   <!--控件上下间的间隔-->
+    <dimen name="compHeight">44dp</dimen> <!--控件（文本框）的高度-->
+    <dimen name="compSide">20dp</dimen>   <!--控件两侧的宽度-->
+    <dimen name="textAreaHeight">80dp</dimen> <!--控件（文本域）的高度-->
+
+    <dimen name="menuInterval">12dp</dimen>
+    <dimen name="menuTextSize">18sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>   <!--控件上下间的间隔-->
+    <!--listview-->
+    <dimen name="listViewHeight">70dp</dimen>  <!-- listview高度 -->
+    <dimen name="listViewLineHeight">1dp</dimen>  <!-- listview高度 -->
+    <dimen name="listViewImageWidth">60dp</dimen>  <!-- listview中图片的宽度 -->
+    <dimen name="listViewImageHeight">60dp</dimen>  <!-- listview中图片的高度 -->
+    <dimen name="listViewImageMargin">10dp</dimen>  <!-- listview中图片的高度 -->
+
+</resources>

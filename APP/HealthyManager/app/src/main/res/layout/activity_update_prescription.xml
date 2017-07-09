@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--logo-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/prescriptionTitleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorTheme"
+            android:text="修改处方"
+            android:textSize="36sp" />
+    </LinearLayout>
+    <!--输入框-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:id="@+id/medicalInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/compSide"
+            android:layout_marginRight="@dimen/compSide"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="*处方描述："
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/prescriptionAbstractEText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="6"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="@dimen/interval">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="*医院/门诊："
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/prescriptionHospitalNameEText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="6"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="@dimen/interval">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="*就诊日期："
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/prescriptionInquiryTimeEText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="6"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="@dimen/interval">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="备注："
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/prescriptionRemakeEText"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/textAreaHeight"
+                        android:layout_weight="6"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:textSize="16sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+    <!--提交-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/compSide"
+        android:layout_marginRight="@dimen/compSide"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/prescriptionSubmitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input"
+            android:background="@drawable/shape_theme"
+            android:text="提    交"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

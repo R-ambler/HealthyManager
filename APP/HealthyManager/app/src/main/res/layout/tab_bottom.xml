@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bottomHeight"
+    android:background="@color/colorTheme"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/id_tab_medical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_medical_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTheme"
+            android:clickable="false"
+            android:src="@drawable/tab_medical_normal" />
+
+        <TextView
+            android:id="@+id/id_tab_medical_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="病历"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_prescription"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_prescription_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTheme"
+            android:clickable="false"
+            android:src="@drawable/tab_prescription_normal" />
+
+        <TextView
+            android:id="@+id/id_tab_prescription_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="处方"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_tab_search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/id_tab_search_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorTheme"
+            android:clickable="false"
+            android:src="@drawable/tab_search_normal" />
+
+        <TextView
+            android:id="@+id/id_tab_search_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查询"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/id_tab_remind"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/id_tab_remind_img"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/colorTheme"-->
+            <!--android:clickable="false"-->
+            <!--android:src="@drawable/tab_remind_normal" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/id_tab_remind_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="提醒"-->
+            <!--android:textColor="@color/colorWhite" />-->
+    <!--</LinearLayout>-->
+
+</LinearLayout>

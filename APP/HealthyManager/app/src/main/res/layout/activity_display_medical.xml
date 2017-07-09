@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/medicalTitleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="病历信息"
+            android:textColor="@color/colorTheme"
+            android:textSize="36sp" />
+    </LinearLayout>
+    <!--输入框-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:id="@+id/medicalInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/compSide"
+            android:layout_marginRight="@dimen/compSide"
+            android:layout_marginBottom="@dimen/compSide"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="就诊日期："
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/medicalInquiryTimeTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="7"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        android:text="就诊日期"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="@dimen/interval">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="医院名称："
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/medicalHospitalNameTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="7"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:hint="医院名称"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="@dimen/interval">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="科室名称："
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/medicalDeptNameTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="7"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:hint="科室名称"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="@dimen/interval">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="医生姓名："
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/medicalDoctorNameTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="7"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:hint="医生姓名"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="@dimen/interval">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="主诉："
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/medicalMainSuitTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="7"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:hint="主诉"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="@dimen/interval">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="现病史："
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/medicalMedicalHistoryTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="7"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:hint="现病史"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="@dimen/interval">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="查体："
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/medicalPhysicalExaminationTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="7"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:hint="查体"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="@dimen/interval">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="诊断："
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/medicalDiagnoseTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="7"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:hint="诊断"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="@dimen/interval">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="诊疗建议："
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/medicalSuggestTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="7"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:hint="诊疗建议"
+                        android:textSize="16sp" />
+                </TableRow>
+
+                <TableRow android:layout_marginTop="@dimen/interval">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/compHeight"
+                        android:layout_weight="3"
+                        android:gravity="right"
+                        android:text="备注："
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/medicalRemakeTxt"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/textAreaHeight"
+                        android:layout_weight="7"
+                        android:background="@drawable/shape"
+                        android:gravity="left"
+                        android:text="备注"
+                        android:textSize="16sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

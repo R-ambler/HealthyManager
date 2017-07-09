@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/shape"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/add_medical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加病历"
+        android:textColor="@color/colorTheme"
+        android:textSize="@dimen/menuTextSize"></TextView>
+
+    <TextView
+        android:id="@+id/add_prescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/menuInterval"
+        android:text="添加处方"
+        android:textColor="@color/colorTheme"
+        android:textSize="@dimen/menuTextSize"></TextView>
+
+    <TextView
+        android:id="@+id/add_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/menuInterval"
+        android:text="添加网址"
+        android:textColor="@color/colorTheme"
+        android:textSize="@dimen/menuTextSize"></TextView>
+    <!--<TextView-->
+        <!--android:id="@+id/add_schedule"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/menuInterval"-->
+        <!--android:text="添加日程"-->
+        <!--android:textColor="@color/colorTheme"-->
+        <!--android:textSize="@dimen/menuTextSize"></TextView>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/add_clock"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="@dimen/menuInterval"-->
+        <!--android:text="添加闹钟"-->
+        <!--android:textColor="@color/colorTheme"-->
+        <!--android:textSize="@dimen/menuTextSize"></TextView>-->
+</LinearLayout>

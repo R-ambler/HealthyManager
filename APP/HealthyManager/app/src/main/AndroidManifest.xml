@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rambler.healthymanager">
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LogInActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".FindPasswordActivity" />
+        <activity android:name=".SignInActivity" />
+        <activity android:name=".TabMedicalActivity" />
+        <activity android:name=".TabPrescriptionActivity" />
+        <activity android:name=".TabRemindActivity" />
+        <activity android:name=".TabSearchActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity
+            android:name=".AddClockActivity"
+            android:theme="@style/ActionBarTheme" />
+        <activity
+            android:name=".DisplayMedicalActivity"
+            android:theme="@style/ActionBarTheme" />
+        <activity
+            android:name=".UpdatePrescriptionActivity"
+            android:theme="@style/ActionBarTheme" />
+        <activity
+            android:name=".AddScheduleActivity"
+            android:theme="@style/ActionBarTheme" />
+        <activity
+            android:name=".AddSearchActivity"
+            android:theme="@style/ActionBarTheme" />
+        <activity
+            android:name=".AddMedicineActivity"
+            android:theme="@style/ActionBarTheme" />
+        <activity
+            android:name=".UpdateSearchActivity"
+            android:theme="@style/ActionBarTheme" />
+        <activity
+            android:name=".UpdateMedicalActivity"
+            android:theme="@style/ActionBarTheme" />
+        <activity android:name=".DisplayPrescriptionActivity"
+            android:theme="@style/ActionBarTheme" />
+        <activity android:name=".DisplayMedicineActivity"
+            android:theme="@style/ActionBarTheme" />
+        <activity
+            android:name=".UpdateMedicineActivity"
+            android:theme="@style/ActionBarTheme" />
+    </application>
+
+</manifest>

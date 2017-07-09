@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="@color/colorTheme"
+    android:orientation="vertical">
+    <!--logo-->
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_pic" />
+    </LinearLayout>
+    <!--输入框-->
+    <LinearLayout
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/compSide"
+        android:layout_marginRight="@dimen/compSide"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/logPhoneNum"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/compHeight"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:hint="手&#160;机&#160;号"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/logPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/compHeight"
+            android:layout_marginTop="@dimen/interval"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:hint="密&#160;&#160;&#8201;码"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/logCBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:button="@drawable/checkbox"
+            android:gravity="left"
+            android:text="记住密码"
+            android:textSize="18sp"
+            android:paddingLeft="3dp"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+    <!--登录-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/compSide"
+        android:layout_marginRight="@dimen/compSide"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input"
+            android:background="@drawable/shape"
+            android:text="登&#160;&#160;&#8201;&#160;&#160;&#8201;录"
+            android:textColor="@color/colorTheme"
+            android:textSize="20sp" />
+        <!--找回密码&不登录使用-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/interval"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/findPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="找回密码"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="  |  "
+                    android:textColor="@color/colorGreen"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="注&#160;&#160;&#8201;&#160;&#160;&#8201;册"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="  |  "-->
+                    <!--android:textColor="@color/colorGreen"-->
+                    <!--android:textSize="18sp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/nologin"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="离线使用"-->
+                    <!--android:textColor="@color/colorWhite"-->
+                    <!--android:textSize="18sp" />-->
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
